@@ -18,20 +18,20 @@ namespace HomeWork2
             }
             number = n;
         }
-        public static RomanNumber Plus(RomanNumber n1, RomanNumber n2)
+        public static RomanNumber Add(RomanNumber n1, RomanNumber n2)
         {
             return new RomanNumber((ushort)(n1.number + n2.number));
         }
-        public static RomanNumber Minus(RomanNumber n1, RomanNumber n2)
+        public static RomanNumber Sub(RomanNumber n1, RomanNumber n2)
         {
             if (n1.number <= n2.number) throw new RomanNumberException("Результат будет отрицательный");
             return new RomanNumber((ushort)(n1.number - n2.number));
         }
-        public static RomanNumber Multy(RomanNumber n1, RomanNumber n2)
+        public static RomanNumber Mul(RomanNumber n1, RomanNumber n2)
         {
             return new RomanNumber((ushort)(n1.number * n2.number));
         }
-        public static RomanNumber Divid(RomanNumber n1, RomanNumber n2)
+        public static RomanNumber Div(RomanNumber n1, RomanNumber n2)
         {
             return new RomanNumber((ushort)(n1.number / n2.number));
         }
